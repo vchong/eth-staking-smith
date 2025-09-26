@@ -12,6 +12,7 @@ jobs:
       matrix:
         target:
           - { triple: x86_64-unknown-linux-gnu, suffix: linux_amd64, file: eth-staking-smith, runner: ubuntu-latest }
+          - { triple: x86_64-unknown-linux-gnu, suffix: linux_amd64_glibc2.35, file: eth-staking-smith, runner: ubuntu-22.04 }
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
